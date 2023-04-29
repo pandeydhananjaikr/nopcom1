@@ -1,2 +1,4 @@
-package Pages;public class Search {
+package Pages;
+
+public class Search {
 }

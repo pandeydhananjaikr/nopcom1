@@ -1,2 +1,5 @@
-package StepDefinitions;public class Base {
+package StepDefinitions;
+
+public class Base {
+
 }

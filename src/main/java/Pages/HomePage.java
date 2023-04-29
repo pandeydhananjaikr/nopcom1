@@ -1,4 +1,4 @@
 package Pages;
 
-public class Login {
+public class HomePage {
 }
