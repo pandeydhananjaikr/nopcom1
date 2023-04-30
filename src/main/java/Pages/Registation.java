@@ -19,7 +19,7 @@ public class Registation {
     private By confPass = By.name("ConfirmPassword");
     private By registerButton = By.name("register-button");
 
-    public void InsertName(String first, String last){
+    public void InsertName(String first, String last) {
         regDriver.findElement(firstName).sendKeys(first);
         regDriver.findElement(lastName).sendKeys(last);
     }
@@ -32,10 +32,11 @@ public class Registation {
         return female;
     }
 
-    public void clKGender(By gender){
+    public void clKGender(By gender) {
         regDriver.findElement(gender).click();
     }
-    public void dob(int date, int month, int year){
+
+    public void dob(int date, int month, int year) {
         Select selectDay = new Select(regDriver.findElement(day_DOB));
         selectDay.selectByIndex(date);
 
@@ -45,18 +46,19 @@ public class Registation {
         Select selectYear = new Select(regDriver.findElement(year_DOB));
         selectYear.selectByIndex(year);
     }
-    public void insertEmail(String emailID){
+
+    public void insertEmail(String emailID) {
         regDriver.findElement(email).sendKeys(emailID);
     }
-    public void InsertPass(String password){
+
+    public void InsertPass(String password) {
         regDriver.findElement(pass).sendKeys(password);
         regDriver.findElement(confPass).sendKeys(password);
     }
-    public void clkRegister(){
+
+    public void clkRegister() {
         regDriver.findElement(registerButton).click();
     }
-
-
 
 
 }

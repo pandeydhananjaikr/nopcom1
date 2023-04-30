@@ -15,4 +15,11 @@ public class Driver {
     public static void tearDown(){
         DriverManager.getDriver().quit();
     }
+
+//    public static void main(String[] args) throws InterruptedException {
+//        initDriver();
+//        DriverManager.getDriver().get("https://www.google.com/");
+//        Thread.sleep(3000);
+//        tearDown();
+//    }
 }

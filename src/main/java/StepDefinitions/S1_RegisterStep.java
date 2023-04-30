@@ -8,7 +8,7 @@ import io.cucumber.java.Before;
 import io.cucumber.java.en.*;
 import org.openqa.selenium.By;
 import org.junit.Assert;
-
+import org.openqa.selenium.NoSuchElementException;
 
 public class S1_RegisterStep  {
     HomePage homePage;
@@ -19,7 +19,7 @@ public class S1_RegisterStep  {
         Driver.initDriver();
     }
     @After
-    public void tear(){
+    public void tearD(){
         Driver.tearDown();
     }
 
@@ -62,8 +62,36 @@ public class S1_RegisterStep  {
     }
 
     @Then("error message for invalid data appears")
-    public void error_message_for_invalid_data_appears() {
+    public void error_message_for_invalid_data_appears() throws InterruptedException {
 
+        DriverManager.getDriver().findElement(By.id("register-button")).click();
+        Thread.sleep(1000);
+        String expectedEmail = "Wrong email";
+        String expectedPassword = "Password must meet the following rules:";
+        String expectedConfirmPassword = "The password and confirmation password do not match.";
+
+        try {
+            String actualEmail = DriverManager.getDriver().findElement(By.id("Email-error")).getText();
+            Assert.assertTrue("Error in Email", expectedEmail.contains(actualEmail));
+        } catch (NoSuchElementException e) {
+            System.out.println("Exception in Email");
+
+        }
+        try {
+            String actualPassword = DriverManager.getDriver().findElement(By.xpath("//span/p")).getText();
+            System.out.println(actualPassword);
+            Assert.assertTrue("Error in Password", expectedPassword.contains(actualPassword));
+        } catch (NoSuchElementException e1) {
+            System.out.println("Exception in Password");
+
+        }
+        try{
+            String actualConfirmPassword = DriverManager.getDriver().findElement(By.id("ConfirmPassword-error")).getText();
+            Assert.assertTrue("Error in Password Confirmation", expectedConfirmPassword.contains(actualConfirmPassword));
+        }catch(NoSuchElementException e2){
+            System.out.println("Exception in Confirm Password");
+
+        }
 
     }
 
@@ -74,8 +102,7 @@ public class S1_RegisterStep  {
 
     @Then("error message for existing email appears")
     public void error_message_for_existing_email_appears() {
-        // Write code here that turns the phrase above into concrete actions
-        throw new io.cucumber.java.PendingException();
+
     }
 
 
