@@ -10,8 +10,9 @@ public class Driver {
         WebDriverManager.firefoxdriver().setup();
         wd = new FirefoxDriver();
         DriverManager.setDriver(wd);
-        DriverManager.getDriver().get("https://demo.nopcommerce.com/");
-
     }
 
+    public static void tearDown(){
+        DriverManager.getDriver().quit();
+    }
 }
