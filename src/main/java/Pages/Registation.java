@@ -53,7 +53,10 @@ public class Registation {
 
     public void InsertPass(String password) {
         regDriver.findElement(pass).sendKeys(password);
-        regDriver.findElement(confPass).sendKeys(password);
+    }
+
+    public void insertConfPass(String cnfPassword){
+        regDriver.findElement(confPass).sendKeys(cnfPassword);
     }
 
     public void clkRegister() {

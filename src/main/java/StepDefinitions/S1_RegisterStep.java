@@ -1,31 +1,22 @@
 package StepDefinitions;
-import DriverUtil.Driver;
 import DriverUtil.DriverManager;
 import Pages.HomePage;
 import Pages.Registation;
-import io.cucumber.java.After;
-import io.cucumber.java.Before;
 import io.cucumber.java.en.*;
 import org.openqa.selenium.By;
 import org.junit.Assert;
 import org.openqa.selenium.NoSuchElementException;
+import org.openqa.selenium.WebDriver;
 
 public class S1_RegisterStep  {
+    WebDriver driver  ;
     HomePage homePage;
     Registation regPage;
 
-    @Before
-    public void init(){
-        Driver.initDriver();
-    }
-    @After
-    public void tearD(){
-        Driver.tearDown();
-    }
-
     @Given("We are on registerpage")
     public void we_are_on_registerpage() {
-        DriverManager.getDriver().get("https://demo.nopcommerce.com/");
+        driver = DriverManager.getDriver();
+        driver.get("https://demo.nopcommerce.com/");
         homePage = new HomePage();
         homePage.clkRegister();
     }
@@ -46,53 +37,55 @@ public class S1_RegisterStep  {
         Thread.sleep(2000);
         regPage.insertEmail(string);
     }
-    @When("user enters {string} in password and confirmpassword")
-    public void user_enters_in_password_and_confirmpassword(String string) throws InterruptedException {
+    @When("user enters {string} in password")
+    public void user_enters_in_password(String string) throws InterruptedException {
         Thread.sleep(2000);
         regPage.InsertPass(string);
     }
+    @When("user enters {string} in confirmpassword")
+    public void user_enters_in_confirmpassword(String string) {
+        regPage.insertConfPass(string);
+    }
+
     @Then("the user is registered and successfully and the message {string} appears")
     public void the_user_is_registered_and_successfully_and_the_message_appears(String string) throws InterruptedException {
         Thread.sleep(2000);
         regPage.clkRegister();
         Thread.sleep(3000);
         String expected = string;
-        String actual = DriverManager.getDriver().findElement(By.className("result")).getText();
+        String actual = driver.findElement(By.className("result")).getText();
         Assert.assertTrue("Registration is Successful",expected.contains(actual));
     }
 
     @Then("error message for invalid data appears")
     public void error_message_for_invalid_data_appears() throws InterruptedException {
 
-        DriverManager.getDriver().findElement(By.id("register-button")).click();
-        Thread.sleep(1000);
+        driver.findElement(By.id("register-button")).click();
+        Thread.sleep(5000);
         String expectedEmail = "Wrong email";
-        String expectedPassword = "Password must meet the following rules:";
+        String expectedPassword = "Password must meet the following rules: ";
         String expectedConfirmPassword = "The password and confirmation password do not match.";
 
         try {
-            String actualEmail = DriverManager.getDriver().findElement(By.id("Email-error")).getText();
+            String actualEmail = driver.findElement(By.id("Email-error")).getText();
             Assert.assertTrue("Error in Email", expectedEmail.contains(actualEmail));
         } catch (NoSuchElementException e) {
             System.out.println("Exception in Email");
 
         }
         try {
-            String actualPassword = DriverManager.getDriver().findElement(By.xpath("//span/p")).getText();
-            System.out.println(actualPassword);
+            String actualPassword = driver.findElement(By.xpath("//span/p")).getText();
             Assert.assertTrue("Error in Password", expectedPassword.contains(actualPassword));
         } catch (NoSuchElementException e1) {
             System.out.println("Exception in Password");
 
         }
         try{
-            String actualConfirmPassword = DriverManager.getDriver().findElement(By.id("ConfirmPassword-error")).getText();
+            String actualConfirmPassword = driver.findElement(By.id("ConfirmPassword-error")).getText();
             Assert.assertTrue("Error in Password Confirmation", expectedConfirmPassword.contains(actualConfirmPassword));
         }catch(NoSuchElementException e2){
             System.out.println("Exception in Confirm Password");
-
         }
-
     }
 
     @Then("error message for empty field appears")

@@ -1,4 +1,4 @@
-package StepDefinitions;
+package TestRunners;
 
 
 import io.cucumber.junit.Cucumber;
@@ -7,7 +7,7 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-            features ="src/test/resources/Features/Register.feature",
+            features ="src/test/resources/Features/F1_Register.feature",
             glue ={"StepDefinitions"},
             monochrome = false,
             plugin ={"pretty", "html:target/HTMLReports/report.html"}
@@ -15,5 +15,5 @@ import org.junit.runner.RunWith;
 )
 
 
-public class TestRunner {
+public class RegTestRunner {
 }
