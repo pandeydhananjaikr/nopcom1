@@ -42,8 +42,8 @@ public class S1_RegisterStep  {
         Thread.sleep(2000);
         regPage.InsertPass(string);
     }
-    @When("user enters {string} in confirmpassword")
-    public void user_enters_in_confirmpassword(String string) {
+    @When("user enters {string} in confirm password")
+    public void user_enters_in_confirm_password(String string) {
         regPage.insertConfPass(string);
     }
 
@@ -63,26 +63,29 @@ public class S1_RegisterStep  {
         driver.findElement(By.id("register-button")).click();
         Thread.sleep(5000);
         String expectedEmail = "Wrong email";
-        String expectedPassword = "Password must meet the following rules: ";
+                             //"Wrong email"
+        String expectedPassword = "Password must meet the following rules:";
+                                //"Password must meet the following rules:"
         String expectedConfirmPassword = "The password and confirmation password do not match.";
+                                       //"The password and confirmation password do not match."
 
         try {
             String actualEmail = driver.findElement(By.id("Email-error")).getText();
-            Assert.assertTrue("Error in Email", expectedEmail.contains(actualEmail));
+            Assert.assertTrue("Error in Email", expectedEmail.equalsIgnoreCase(actualEmail));
         } catch (NoSuchElementException e) {
             System.out.println("Exception in Email");
 
         }
         try {
             String actualPassword = driver.findElement(By.xpath("//span/p")).getText();
-            Assert.assertTrue("Error in Password", expectedPassword.contains(actualPassword));
+            Assert.assertTrue("Error in Password", expectedPassword.equalsIgnoreCase(actualPassword));
         } catch (NoSuchElementException e1) {
             System.out.println("Exception in Password");
 
         }
         try{
             String actualConfirmPassword = driver.findElement(By.id("ConfirmPassword-error")).getText();
-            Assert.assertTrue("Error in Password Confirmation", expectedConfirmPassword.contains(actualConfirmPassword));
+            Assert.assertTrue("Error in Password Confirmation", expectedConfirmPassword.equalsIgnoreCase(actualConfirmPassword));
         }catch(NoSuchElementException e2){
             System.out.println("Exception in Confirm Password");
         }
@@ -90,6 +93,7 @@ public class S1_RegisterStep  {
 
     @Then("error message for empty field appears")
     public void error_message_for_empty_field_appears() {
+
 
     }
 
