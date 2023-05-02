@@ -1,15 +1,17 @@
 package StepDefinitions;
+
 import DriverUtil.DriverManager;
 import Pages.HomePage;
 import Pages.Registation;
-import io.cucumber.java.en.*;
-import org.openqa.selenium.By;
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
 import org.junit.Assert;
+import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
 
-public class S1_RegisterStep  {
+public class S1_RegisterStep_New {
     WebDriver driver  ;
     HomePage homePage;
     Registation regPage;
@@ -58,46 +60,53 @@ public class S1_RegisterStep  {
         Assert.assertTrue("Registration is Successful",expected.contains(actual));
     }
 
+    @Then("error message for invalid data appears {string}")
+    public void error_message_for_invalid_data_appears(String user_count) throws InterruptedException {
 
+        driver.findElement(By.id("register-button")).click();
+        Thread.sleep(5000);
         String expectedEmail = "Wrong email";
+        //"Wrong email"
         String expectedPassword = "Password must meet the following rules:";
+        //"Password must meet the following rules:"
         String expectedConfirmPassword = "The password and confirmation password do not match.";
+        //"The password and confirmation password do not match."
 
-    @Then("error message for invalid email appears")
-    public void error_message_for_invalid_email_appears() {
 
-        try {
-            String actualEmail = driver.findElement(By.id("Email-error")).getText();
-            Assert.assertTrue("Error in Email", expectedEmail.equalsIgnoreCase(actualEmail));
-        } catch (NoSuchElementException e) {
-            System.out.println("Exception in Email");
+        switch (user_count) {
+            case "1":
+                try {
+                    String actualEmail = driver.findElement(By.id("Email-error")).getText();
+                    Assert.assertTrue("Error in Email", expectedEmail.equalsIgnoreCase(actualEmail));
+                } catch (NoSuchElementException e) {
+                    System.out.println("Exception in Email");
+                }
+                break;
+            case "2":
+                try {
+                    String actualPassword = driver.findElement(By.xpath("//span/p")).getText();
+                    Assert.assertTrue("Error in Password", expectedPassword.equalsIgnoreCase(actualPassword));
+                } catch (NoSuchElementException e) {
+                    System.out.println("Exception in Password");
+                }
+                break;
+
+            case "3":
+                try {
+                    String actualConfirmPassword = driver.findElement(By.id("ConfirmPassword-error")).getText();
+                    Assert.assertTrue("Error in Password Confirmation", expectedConfirmPassword.equalsIgnoreCase(actualConfirmPassword));
+                } catch (NoSuchElementException e) {
+                    System.out.println("Exception in Confirm Password");
+                }
+                break;
+            default:
+                System.out.println("unknown test");
         }
     }
-
-    @Then("error message for invalid password appears")
-    public void error_message_for_invalid_password_appears() {
-        try {
-            String actualPassword = driver.findElement(By.xpath("//span/p")).getText();
-            Assert.assertTrue("Error in Password", expectedPassword.equalsIgnoreCase(actualPassword));
-        } catch (NoSuchElementException e1) {
-            System.out.println("Exception in Password");
-
-        }
-    }
-
-    @Then("error message for password mismatch appears")
-    public void error_message_for_password_mismatch_appears() {
-
-            try {
-                String actualConfirmPassword = driver.findElement(By.xpath("//*[@id=\"ConfirmPassword-error\"]")).getText();
-                Assert.assertTrue("Error in Password Confirmation", expectedConfirmPassword.equalsIgnoreCase(actualConfirmPassword));
-            } catch (NoSuchElementException e2) {
-                System.out.println("Exception in Confirm Password");
-            }
-        }
 
     @Then("error message for empty field appears")
     public void error_message_for_empty_field_appears() {
+
 
     }
 
@@ -105,4 +114,6 @@ public class S1_RegisterStep  {
     public void error_message_for_existing_email_appears() {
 
     }
+
+
 }

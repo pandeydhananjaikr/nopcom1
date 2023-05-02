@@ -36,15 +36,15 @@ public class Registation {
         regDriver.findElement(gender).click();
     }
 
-    public void dob(int date, int month, int year) {
+    public void dob(String date, String month, String year) {
         Select selectDay = new Select(regDriver.findElement(day_DOB));
-        selectDay.selectByIndex(date);
+        selectDay.selectByVisibleText(date);
 
         Select selectMonth = new Select(regDriver.findElement(month_DOB));
-        selectMonth.selectByIndex(month);
+        selectMonth.selectByVisibleText(month);
 
         Select selectYear = new Select(regDriver.findElement(year_DOB));
-        selectYear.selectByIndex(year);
+        selectYear.selectByVisibleText(year);
     }
 
     public void insertEmail(String emailID) {

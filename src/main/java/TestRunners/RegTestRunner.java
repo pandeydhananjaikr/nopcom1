@@ -9,11 +9,10 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
             features ="src/test/resources/Features/F1_Register.feature",
             glue ={"StepDefinitions"},
+            tags = "@InvalidData",
             monochrome = false,
             plugin ={"pretty", "html:target/HTMLReports/report.html"}
 
 )
-
-
 public class RegTestRunner {
 }
