@@ -12,22 +12,26 @@ public class Login {
     private By loginButton = By.xpath("//button[@class=\"button-1 login-button\"]");
 
     private By logoutButton = By.linkText("Log out");
-    public void insertEmail(String email){
+
+    public void insertEmail(String email) {
         DriverManager.getDriver().findElement(loginEmail).sendKeys(email);
     }
-    public void insertPass(String pass){
+
+    public void insertPass(String pass) {
         DriverManager.getDriver().findElement(loginPass).sendKeys(pass);
     }
-    public void clickLogin(){
+
+    public void clickLogin() {
         DriverManager.getDriver().findElement(loginButton).click();
     }
-    public boolean logoutExist() {
-        List<WebElement> elements = DriverManager.getDriver().findElements(loginButton);
+
+    public boolean logoutExists() {
+        List<WebElement> elements = DriverManager.getDriver().findElements(logoutButton);
         boolean bool = false;
         if (elements.size() != 0) {
             bool = true;
         }
         return bool;
     }
-
 }
+
