@@ -4,18 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a98b808e-8889-48e3-9379-b921c58e2c4b" name="Changes" comment="initial">
-      <change afterPath="$PROJECT_DIR$/src/main/java/StepDefinitions/S2_SearchStep.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/Features/F3_Search_Item.feature" afterDir="false" />
+    <list default="true" id="a98b808e-8889-48e3-9379-b921c58e2c4b" name="Changes" comment="login feature with a positive scenario updated">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Pages/SearchPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/Login.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/Search.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/SearchPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/StepDefinitions/S1_RegisterStep.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/StepDefinitions/S1_RegisterStep.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/StepDefinitions/S2_LoginStep.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/StepDefinitions/S2_LoginStep.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/Features/F1_Register.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/Features/F1_Register.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/Features/F1_Register_New.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/Features/F1_Register_New.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/Features/F2_Login.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/Features/F2_Login.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/Search.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -209,7 +201,14 @@
       <option name="project" value="LOCAL" />
       <updated>1683120725751</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="login feature with a positive scenario updated">
+      <created>1683309007962</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1683309007962</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -235,6 +234,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial" />
-    <option name="LAST_COMMIT_MESSAGE" value="initial" />
+    <MESSAGE value="login feature with a positive scenario updated" />
+    <option name="LAST_COMMIT_MESSAGE" value="login feature with a positive scenario updated" />
   </component>
 </project>
