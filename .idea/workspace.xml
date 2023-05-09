@@ -5,9 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a98b808e-8889-48e3-9379-b921c58e2c4b" name="Changes" comment="login feature with a positive scenario updated">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Pages/SearchPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Listeners/ListenerClass.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Reports/ExtentLogger.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Reports/ExtentManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Reports/ExtentReport.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/Search.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/SearchPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/SearchPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/StepDefinitions/Hooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/StepDefinitions/Hooks.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/StepDefinitions/S1_RegisterStep_New.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/StepDefinitions/S1_RegisterStep_New.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/TestRunners/RegTestRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TestRunners/RegTestRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/Features/F1_Register_New.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/Features/F1_Register_New.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/Features/F3_Search_Item.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/Features/F3_Search_Item.feature" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,15 +56,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/dhana/IdeaProjects/NopCommerce&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;org.jetbrains.plugins.github.ui.GithubSettingsConfigurable&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "C:/Users/dhana/IdeaProjects/NopCommerce",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\dhana\IdeaProjects\NopCommerce\src\test\resources\Features" />
@@ -68,46 +80,7 @@
       <recent name="Pages" />
     </key>
   </component>
-  <component name="RunManager" selected="Cucumber Java.Scenario: Validate that the search option is giving right results">
-    <configuration name="Feature: F2_Login" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
-      <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/Features/F2_Login.feature" />
-      <option name="GLUE" value="StepDefinitions" />
-      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
-      <module name="NopCommerce" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
-      <option name="SUGGESTED_NAME" value="Feature: F2_Login" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="io.cucumber.core.cli.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Scenario: User registers with password mismatch" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
-      <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/Features/F1_Register.feature" />
-      <option name="GLUE" value="StepDefinitions" />
-      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
-      <module name="NopCommerce" />
-      <option name="NAME_FILTER" value="^User registers with password mismatch$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^User registers with password mismatch$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: User registers with password mismatch" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="io.cucumber.core.cli.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="TestNG.C:/Users/dhana/IdeaProjects/NopCommerce/testng.xml">
     <configuration name="Scenario: User registers with valid data (1)" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/Features/F1_Register_New.feature" />
@@ -117,26 +90,6 @@
       <option name="NAME_FILTER" value="^User registers with valid data$" />
       <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^User registers with valid data$&quot;" />
       <option name="SUGGESTED_NAME" value="Scenario: User registers with valid data" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="io.cucumber.core.cli.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Scenario: Validate that the registered login is working" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
-      <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/Features/F2_Login.feature" />
-      <option name="GLUE" value="StepDefinitions" />
-      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
-      <module name="NopCommerce" />
-      <option name="NAME_FILTER" value="^Validate that the registered login is working$" />
-      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^Validate that the registered login is working$&quot;" />
-      <option name="SUGGESTED_NAME" value="Scenario: Validate that the registered login is working" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -168,13 +121,55 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="RegTestRunner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="NopCommerce" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="TestRunners.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="TestRunners" />
+      <option name="MAIN_CLASS_NAME" value="TestRunners.RegTestRunner" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="C:/Users/dhana/IdeaProjects/NopCommerce/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="NopCommerce" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/testng.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RegTestRunner" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="NopCommerce" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="TestRunners.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="TestRunners" />
+      <option name="MAIN_CLASS_NAME" value="TestRunners.RegTestRunner" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.C:/Users/dhana/IdeaProjects/NopCommerce/testng.xml" />
+        <item itemvalue="TestNG.RegTestRunner" />
+        <item itemvalue="JUnit.RegTestRunner" />
         <item itemvalue="Cucumber Java.Scenario: Validate that the search option is giving right results" />
-        <item itemvalue="Cucumber Java.Feature: F2_Login" />
-        <item itemvalue="Cucumber Java.Scenario: Validate that the registered login is working" />
         <item itemvalue="Cucumber Java.Scenario: User registers with valid data (1)" />
-        <item itemvalue="Cucumber Java.Scenario: User registers with password mismatch" />
       </list>
     </recent_temporary>
   </component>
@@ -233,6 +228,7 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="initial" />
     <MESSAGE value="login feature with a positive scenario updated" />
     <option name="LAST_COMMIT_MESSAGE" value="login feature with a positive scenario updated" />

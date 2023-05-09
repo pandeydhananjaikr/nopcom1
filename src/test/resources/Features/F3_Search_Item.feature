@@ -9,3 +9,4 @@ Feature: Searching an item on he homepage
       | laptop |
       | phone |
 
+

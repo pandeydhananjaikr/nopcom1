@@ -1,17 +1,29 @@
 package TestRunners;
+import io.cucumber.testng.AbstractTestNGCucumberTests;
+import io.cucumber.testng.CucumberOptions;
+import io.cucumber.testng.TestNGCucumberRunner;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
 
-import io.cucumber.junit.Cucumber;
-import io.cucumber.junit.CucumberOptions;
-import org.junit.runner.RunWith;
-
-@RunWith(Cucumber.class)
 @CucumberOptions(
-            features ="src/test/resources/Features/F1_Register.feature",
+            features ="src/test/resources/Features/F1_Register_New.feature",
             glue ={"StepDefinitions"},
-            tags = "@InvalidData",
+            tags = "@negative",
             monochrome = false,
             plugin ={"pretty", "html:target/HTMLReports/report.html"}
 
 )
-public class RegTestRunner {
+public class RegTestRunner extends AbstractTestNGCucumberTests {
+    private TestNGCucumberRunner testNGCucumberRunner;
+
+    @BeforeClass(alwaysRun = true)
+    public void setUpClass() throws Exception {
+        testNGCucumberRunner = new TestNGCucumberRunner(this.getClass());
+    }
+
+    @AfterClass(alwaysRun = true)
+    public void tearDownClass() {
+        testNGCucumberRunner.finish();
+    }
+
 }

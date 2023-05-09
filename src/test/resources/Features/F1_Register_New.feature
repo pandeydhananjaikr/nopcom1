@@ -1,5 +1,5 @@
 Feature: User registers a new account
-
+@positive
   Scenario Outline: User registers with valid data
     Given We are on registerpage
     When user enters "<firstname>" in the first name and "<lastname>" in the last name
@@ -11,6 +11,7 @@ Feature: User registers a new account
       | firstname | lastname | email       | password | confPassword |
       | abc       | abc      | abc@abc.com | 123456   | 123456        |
 
+@negative
   Scenario Outline: User registers with invalid data
     Given We are on registerpage
     When user enters "<firstname>" in the first name and "<lastname>" in the last name
@@ -44,6 +45,7 @@ Feature: User registers a new account
     Then error message for existing email appears
       | firstname | lastname | email       | password | confPassword |
       | abc       | abc      | abc@abc.com | 123456   | 12345        |
+
 
 
 
