@@ -9,7 +9,7 @@ Feature: User registers a new account
     Then the user is registered and successfully and the message "Your registration completed" appears
     Examples:
       | firstname | lastname | email       | password | confPassword |
-      | abc       | abc      | abc@abc.com | 123456   | 123456        |
+      | abc       | abc      | abcdef@abc.com | 123456   | 123456        |
 
 @negative
   Scenario Outline: User registers with invalid data

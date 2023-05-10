@@ -7,6 +7,7 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.junit.Assert;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Dimension;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 
@@ -18,6 +19,9 @@ public class S1_RegisterStep_New {
     @Given("We are on registerpage")
     public void we_are_on_registerpage() {
         driver = DriverManager.getDriver();
+        Dimension d = new Dimension(1382,744);
+//Resize the current window to the given dimension
+        driver.manage().window().setSize(d);
         driver.get("https://demo.nopcommerce.com/");
         homePage = new HomePage();
         homePage.clkRegister();
