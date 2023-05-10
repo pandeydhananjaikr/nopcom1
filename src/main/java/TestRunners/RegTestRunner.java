@@ -8,7 +8,7 @@ import org.testng.annotations.BeforeClass;
 @CucumberOptions(
             features ="src/test/resources/Features/F1_Register_New.feature",
             glue ={"StepDefinitions"},
-            tags = "@negative",
+            tags = "@positive",
             monochrome = false,
             plugin ={"pretty", "html:target/HTMLReports/report.html"}
 
@@ -16,14 +16,14 @@ import org.testng.annotations.BeforeClass;
 public class RegTestRunner extends AbstractTestNGCucumberTests {
     private TestNGCucumberRunner testNGCucumberRunner;
 
-    @BeforeClass(alwaysRun = true)
-    public void setUpClass() throws Exception {
-        testNGCucumberRunner = new TestNGCucumberRunner(this.getClass());
-    }
-
-    @AfterClass(alwaysRun = true)
-    public void tearDownClass() {
-        testNGCucumberRunner.finish();
-    }
+//    @BeforeClass(alwaysRun = true)
+//    public void setUpClass() throws Exception {
+//        testNGCucumberRunner = new TestNGCucumberRunner(this.getClass());
+//    }
+//
+//    @AfterClass(alwaysRun = true)
+//    public void tearDownClass() {
+//        testNGCucumberRunner.finish();
+//    }
 
 }

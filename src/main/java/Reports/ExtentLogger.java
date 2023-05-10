@@ -11,4 +11,6 @@ public class ExtentLogger {
     public static void testSkip(String logMessage){
         ExtentManager.getExtent().skip(logMessage);
     }
+
+
 }

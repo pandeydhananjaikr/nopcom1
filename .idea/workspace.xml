@@ -5,20 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a98b808e-8889-48e3-9379-b921c58e2c4b" name="Changes" comment="login feature with a positive scenario updated">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Listeners/ListenerClass.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Reports/ExtentLogger.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Reports/ExtentManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Reports/ExtentReport.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/SearchPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/SearchPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Listeners/ListenerClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Listeners/ListenerClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Reports/ExtentLogger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Reports/ExtentLogger.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Reports/ExtentReport.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Reports/ExtentReport.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/StepDefinitions/Hooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/StepDefinitions/Hooks.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/StepDefinitions/S1_RegisterStep_New.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/StepDefinitions/S1_RegisterStep_New.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/TestRunners/RegTestRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TestRunners/RegTestRunner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/Features/F1_Register_New.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/Features/F1_Register_New.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/Features/F3_Search_Item.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/Features/F3_Search_Item.feature" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,6 +56,9 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "last_opened_file_path": "C:/Users/dhana/IdeaProjects/NopCommerce",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.0",
     "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
@@ -80,7 +76,7 @@
       <recent name="Pages" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.C:/Users/dhana/IdeaProjects/NopCommerce/testng.xml">
+  <component name="RunManager" selected="TestNG.RegTestRunner">
     <configuration name="Scenario: User registers with valid data (1)" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/Features/F1_Register_New.feature" />
@@ -165,8 +161,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.C:/Users/dhana/IdeaProjects/NopCommerce/testng.xml" />
         <item itemvalue="TestNG.RegTestRunner" />
+        <item itemvalue="TestNG.C:/Users/dhana/IdeaProjects/NopCommerce/testng.xml" />
         <item itemvalue="JUnit.RegTestRunner" />
         <item itemvalue="Cucumber Java.Scenario: Validate that the search option is giving right results" />
         <item itemvalue="Cucumber Java.Scenario: User registers with valid data (1)" />
