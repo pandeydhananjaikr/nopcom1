@@ -7,11 +7,6 @@
     <list default="true" id="a98b808e-8889-48e3-9379-b921c58e2c4b" name="Changes" comment="login feature with a positive scenario updated">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Listeners/ListenerClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Listeners/ListenerClass.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Reports/ExtentLogger.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Reports/ExtentLogger.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Reports/ExtentReport.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Reports/ExtentReport.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/StepDefinitions/Hooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/StepDefinitions/Hooks.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/TestRunners/RegTestRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/TestRunners/RegTestRunner.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
