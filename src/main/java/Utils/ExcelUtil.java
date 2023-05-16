@@ -9,8 +9,14 @@ import org.openqa.selenium.support.PageFactory;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.lang.reflect.Array;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Map;
+import java.util.TreeMap;
+
 public class ExcelUtil {
-     static WebDriver driver;
+    static WebDriver driver;
     public ExcelUtil(WebDriver driver){
         ExcelUtil.driver = driver;
         PageFactory.initElements(driver, null);
@@ -30,7 +36,6 @@ public class ExcelUtil {
         fis.close();
         return rowCount;
     }
-
     public static int getCellCount(String excelFIle, String excelSheet, int rowNumber) throws IOException {
         fis = new FileInputStream(excelFIle);
         workbook = new XSSFWorkbook(fis);
@@ -62,10 +67,40 @@ public class ExcelUtil {
         return data;
     }
 
+    public static List<String> getDataBasedOnValue(String excelPath, String sheetName, String refValue,
+                                                   int valueCol, int expectedCol, int startRowNumber ) throws IOException {
+
+        Map<String, List<String>> map = new TreeMap<>(String.CASE_INSENSITIVE_ORDER);
+        int rowCount = ExcelUtil.getRowCount(excelPath, sheetName);
+        List<String> list = new ArrayList<>();
+        for (int i = startRowNumber; i <rowCount ; i++) {
+            String key = ExcelUtil.getCellData(excelPath, sheetName, i, valueCol);
+            String value = ExcelUtil.getCellData(excelPath, sheetName, i, expectedCol);
+
+            if (map.containsKey(key)){
+                list = map.get(key);
+                list.add(value);
+                map.put(key,list);
+            }
+            else {
+                list = new ArrayList<>();
+                list.add(value);
+                map.put(key, list);
+            }
+        }
+        if (map.containsKey(refValue)){
+            list = map.get(refValue);
+        }
+        else {
+            System.out.println("data not found");
+        }
+        return list;
 
 
 
 
+
+    }
 
 
 }

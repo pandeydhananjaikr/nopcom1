@@ -20,9 +20,60 @@ public class DataTableStep {
 
         String path = "C:\\Users\\dhana\\Downloads\\Book1.xlsx";
         String cellData = ExcelUtil.getCellData(path,sheetName, rowNumber, columnNumber );
-        System.out.println(cellData);
+//        System.out.println(cellData);
+
+        for (int i = 1; i <= 4; i++) {
+            String s = String.valueOf(i);
+
+            List<String> firstName = ExcelUtil.getDataBasedOnValue(path, sheetName, "s", 0, 1, 1 );
+            System.out.println(firstName);
+
+            List<String> lastName = ExcelUtil.getDataBasedOnValue(path, sheetName, "s", 0, 2, 1 );
+            System.out.println(lastName);
+
+            List<String> email = ExcelUtil.getDataBasedOnValue(path, sheetName, "s", 0, 3, 1 );
+            System.out.println(email);
+
+            List<String> password = ExcelUtil.getDataBasedOnValue(path, sheetName, "s", 0, 4, 1 );
+            System.out.println(password);
+
+            List<String> confPassword = ExcelUtil.getDataBasedOnValue(path, sheetName, "s", 0, 5, 1 );
+            System.out.println(confPassword);
+
+        }
 
     }
+
+    @Given("read excel value based on value {string} , {string}")
+    public void read_excel_value_based_on_value(String sheetName, String testCaseNumber) throws IOException {
+        String path = "C:\\Users\\dhana\\Downloads\\Book2.xlsx";
+
+        List<String> firstName = ExcelUtil.getDataBasedOnValue(path, sheetName, testCaseNumber, 0, 1, 1 );
+        System.out.println(firstName);
+
+        System.out.println(firstName.get(0));
+
+        List<String> lastName = ExcelUtil.getDataBasedOnValue(path, sheetName, testCaseNumber, 0, 2, 1 );
+        System.out.println(lastName);
+
+        List<String> email = ExcelUtil.getDataBasedOnValue(path, sheetName, testCaseNumber, 0, 3, 1 );
+        System.out.println(email);
+
+        List<String> password = ExcelUtil.getDataBasedOnValue(path, sheetName, testCaseNumber, 0, 4, 1 );
+        System.out.println(password);
+
+        List<String> confPassword = ExcelUtil.getDataBasedOnValue(path, sheetName, testCaseNumber, 0, 5, 1 );
+        System.out.println(confPassword);
+
+
+
+    }
+
+
+
+
+
+
 
 
 
@@ -31,6 +82,7 @@ public class DataTableStep {
         List<String> name = dataTable.asList(String.class);
         String str1 = name.get(0);
         System.out.println(str1);
+
     }
     @When("I give the data")
     public void i_give_the_data(DataTable dataTable) {

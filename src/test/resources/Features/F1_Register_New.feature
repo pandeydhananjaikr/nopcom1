@@ -12,7 +12,6 @@ Feature: User registers a new account
       | firstname | lastname | email          | password | confPassword |
       | abc       | abc      | abcdef@abc.com | 123456   | 123456       |
 
-
   @negative
   Scenario Outline: User registers with invalid data
     Given We are on registerpage
