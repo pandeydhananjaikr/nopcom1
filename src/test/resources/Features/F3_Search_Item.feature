@@ -5,8 +5,8 @@ Feature: Searching an item on he homepage
     Then we are taken to the results page
     And we validate the results
     Examples:
-      | item |
+      | item   |
       | laptop |
-      | phone |
+      | phone  |
 
 

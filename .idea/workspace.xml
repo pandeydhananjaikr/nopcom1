@@ -5,36 +5,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a98b808e-8889-48e3-9379-b921c58e2c4b" name="Changes" comment="login feature with a positive scenario updated">
-      <change afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/StepDefinitions/DataTableStep.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/StepDefinitions/Hooks.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/TestRunners/RegTestRunner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/extent.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/resources/Features/DataTable.feature" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output-results/SparkReport 14-May-23 20-27-16/Report/ExecutionReport.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output-results/SparkReport 14-May-23 20-27-16/Screenshots/embedded1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output-results/SparkReport 14-May-23 20-47-00/Report/ExecutionReport.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output-results/SparkReport 14-May-23 20-47-00/Screenshots/embedded1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output-results/SparkReport 14-May-23 20-48-41/Report/ExecutionReport.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output-results/SparkReport 14-May-23 20-52-19/Report/ExecutionReport.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output-results/SparkReport 14-May-23 20-54-40/Report/ExecutionReport.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test-output-results/SparkReport 14-May-23 23-24-20/Report/ExecutionReport.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Utils/ExcelUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/Features/DataTable1.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output-results/SparkReport 15-May-23 01-30-22/Report/ExecutionReport.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output-results/SparkReport 15-May-23 14-07-48/Report/ExecutionReport.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output-results/SparkReport 15-May-23 14-08-21/Report/ExecutionReport.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output-results/SparkReport 15-May-23 14-08-21/Screenshots/embedded1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test-output-results/SparkReport 15-May-23 23-06-56/Report/ExecutionReport.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NopCommerce" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/DriverUtil/DriverManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DriverUtil/DriverManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Listeners/ListenerClass.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Reports/ExtentLogger.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Reports/ExtentManager.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Reports/ExtentReport.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/StepDefinitions/Hooks.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/StepDefinitions/S1_RegisterStep.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/StepDefinitions/S1_RegisterStep.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/StepDefinitions/S1_RegisterStep_New.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/StepDefinitions/S1_RegisterStep_New.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/StepDefinitions/S2_LoginStep.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/StepDefinitions/S2_LoginStep.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/StepDefinitions/S2_SearchStep.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/StepDefinitions/S2_SearchStep.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/TestRunners/RegTestRunner.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/Features/F1_Register_New.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/Features/F1_Register_New.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/DriverUtil/Driver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utils/Driver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/DriverUtil/DriverManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Utils/DriverManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/Login.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/Registation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/Registation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Pages/SearchPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Pages/SearchPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/StepDefinitions/DataTableStep.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/StepDefinitions/DataTableStep.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/StepDefinitions/Hooks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/StepDefinitions/Hooks.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/StepDefinitions/S1_RegisterStep_New.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/StepDefinitions/S1_RegisterStep_New.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/StepDefinitions/S2_LoginStep.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/StepDefinitions/S2_LoginStep.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/StepDefinitions/S2_SearchStep.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/StepDefinitions/S2_SearchStep.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TestRunners/RegTestRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestRunners/RegTestRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/Features/DataTable.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/Features/DataTable.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/Features/F3_Search_Item.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/Features/F3_Search_Item.feature" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,7 +71,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "last_opened_file_path": "C:/Users/dhana/IdeaProjects/nopcom1",
+    "last_opened_file_path": "C:/Users/dhana/IdeaProjects/OrangeHRM",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.0",
@@ -87,6 +80,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\dhana\IdeaProjects\nopcom1\src\test\resources\Features" />
       <recent name="C:\Users\dhana\IdeaProjects\nopcom1\src\main\java\TestRunners" />
       <recent name="C:\Users\dhana\IdeaProjects\NopCommerce\src\test\resources\Features" />
       <recent name="C:\Users\dhana\IdeaProjects\NopCommerce\src\test" />
@@ -101,7 +95,7 @@
       <recent name="Pages" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.RegTestRunner">
+  <component name="RunManager" selected="Cucumber Java.Scenario: ExcelReadingDemo">
     <configuration name="Feature: DataTable" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
       <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/Features/DataTable.feature" />
@@ -141,6 +135,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Scenario: ExcelReadingDemo" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+      <option name="CUCUMBER_CORE_VERSION" value="5" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/Features/DataTable.feature" />
+      <option name="GLUE" value="StepDefinitions" />
+      <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
+      <module name="NopCommerce" />
+      <option name="NAME_FILTER" value="^ExcelReadingDemo$" />
+      <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter --name &quot;^ExcelReadingDemo$&quot;" />
+      <option name="SUGGESTED_NAME" value="Scenario: ExcelReadingDemo" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="io.cucumber.core.cli.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="RegTestRunner" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="NopCommerce" />
       <extension name="coverage">
@@ -167,16 +181,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="C:/Users/dhana/IdeaProjects/NopCommerce/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="NopCommerce" />
-      <option name="SUITE_NAME" value="$PROJECT_DIR$/testng.xml" />
-      <option name="TEST_OBJECT" value="SUITE" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="RegTestRunner" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="NopCommerce" />
       <extension name="coverage">
@@ -196,11 +200,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Cucumber Java.Scenario: ExcelReadingDemo" />
         <item itemvalue="JUnit.RegTestRunner" />
         <item itemvalue="Cucumber Java.Feature: DataTable" />
         <item itemvalue="Cucumber Java.Scenario: Datatable reading demo" />
         <item itemvalue="TestNG.RegTestRunner" />
-        <item itemvalue="TestNG.C:/Users/dhana/IdeaProjects/NopCommerce/testng.xml" />
       </list>
     </recent_temporary>
   </component>

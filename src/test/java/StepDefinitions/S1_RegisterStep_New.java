@@ -1,5 +1,5 @@
 package StepDefinitions;
-import DriverUtil.DriverManager;
+import Utils.DriverManager;
 import Pages.HomePage;
 import Pages.Registation;
 import io.cucumber.java.en.Given;

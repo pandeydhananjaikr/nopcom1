@@ -1,6 +1,6 @@
 package StepDefinitions;
 
-import DriverUtil.DriverManager;
+import Utils.DriverManager;
 import Pages.HomePage;
 import Pages.SearchPage;
 import io.cucumber.java.en.*;
