@@ -66,10 +66,9 @@ public class ExcelUtil {
         fis.close();
         return data;
     }
-
     public static List<String> getDataBasedOnValue(String excelPath, String sheetName, String refValue,
-                                                   int valueCol, int expectedCol, int startRowNumber ) throws IOException {
-
+                                                      int valueCol, int expectedCol, int startRowNumber )
+                                                        throws IOException {
         Map<String, List<String>> map = new TreeMap<>(String.CASE_INSENSITIVE_ORDER);
         int rowCount = ExcelUtil.getRowCount(excelPath, sheetName);
         List<String> list = new ArrayList<>();
@@ -95,12 +94,5 @@ public class ExcelUtil {
             System.out.println("data not found");
         }
         return list;
-
-
-
-
-
     }
-
-
 }

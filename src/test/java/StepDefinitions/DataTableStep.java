@@ -4,7 +4,6 @@ import io.cucumber.datatable.DataTable;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
-
 import java.io.IOException;
 import java.util.List;
 import java.util.Map;
@@ -39,9 +38,7 @@ public class DataTableStep {
 
             List<String> confPassword = ExcelUtil.getDataBasedOnValue(path, sheetName, "s", 0, 5, 1 );
             System.out.println(confPassword);
-
         }
-
     }
 
     @Given("read excel value based on value {string} , {string}")
@@ -64,8 +61,6 @@ public class DataTableStep {
 
         List<String> confPassword = ExcelUtil.getDataBasedOnValue(path, sheetName, testCaseNumber, 0, 5, 1 );
         System.out.println(confPassword);
-
-
 
     }
 
@@ -98,7 +93,6 @@ public class DataTableStep {
     }
     @Then("the test passes")
     public void the_test_passes() {
+
     }
-
-
 }

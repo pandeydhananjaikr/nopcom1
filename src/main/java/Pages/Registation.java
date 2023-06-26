@@ -64,4 +64,10 @@ public class Registation {
     }
 
 
+    public void validateEmailField(){
+
+    }
+
+
+
 }

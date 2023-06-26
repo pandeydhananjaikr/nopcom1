@@ -7,7 +7,6 @@ Feature: Demo DataTable
     When I give the data
       | firstname | lastname | email         |
       | abc       | def      | abc@gmail.com |
-
     Then the test passes
 
     @exceltestcase
@@ -25,4 +24,7 @@ Feature: Demo DataTable
     Given Read excel value
       | SheetName | RowNumber | ColumnNumber |
       | Sheet1    | 4         | 4            |
+
+
+
 

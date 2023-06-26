@@ -9,12 +9,10 @@ import org.openqa.selenium.TakesScreenshot;
 import static Utils.DriverManager.driver;
 
 public class Hooks {
-
     @Before()
     public void open() {
         Driver.initDriver();
     }
-
     @AfterStep
     public void captureScreenshot(Scenario scenario){
 

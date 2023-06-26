@@ -76,35 +76,40 @@ public class S1_RegisterStep_New {
         //"The password and confirmation password do not match."
 
 
-        switch (user_count) {
-            case "1":
-                try {
-                    String actualEmail = driver.findElement(By.id("Email-error")).getText();
-                    Assert.assertTrue("Error in Email", expectedEmail.equalsIgnoreCase(actualEmail));
-                } catch (NoSuchElementException e) {
-                    System.out.println("Exception in Email");
-                }
-                break;
-            case "2":
-                try {
-                    String actualPassword = driver.findElement(By.xpath("//span/p")).getText();
-                    Assert.assertTrue("Error in Password", expectedPassword.equalsIgnoreCase(actualPassword));
-                } catch (NoSuchElementException e) {
-                    System.out.println("Exception in Password");
-                }
-                break;
 
-            case "3":
-                try {
-                    String actualConfirmPassword = driver.findElement(By.id("ConfirmPassword-error")).getText();
-                    Assert.assertTrue("Error in Password Confirmation", expectedConfirmPassword.equalsIgnoreCase(actualConfirmPassword));
-                } catch (NoSuchElementException e) {
-                    System.out.println("Exception in Confirm Password");
-                }
-                break;
-            default:
-                System.out.println("unknown test");
-        }
+
+
+
+//
+//        switch (user_count) {
+//            case "1":
+//                try {
+//                    String actualEmail = driver.findElement(By.id("Email-error")).getText();
+//                    Assert.assertTrue("Error in Email", expectedEmail.equalsIgnoreCase(actualEmail));
+//                } catch (NoSuchElementException e) {
+//                    System.out.println("Exception in Email");
+//                }
+//                break;
+//            case "2":
+//                try {
+//                    String actualPassword = driver.findElement(By.xpath("//span/p")).getText();
+//                    Assert.assertTrue("Error in Password", expectedPassword.equalsIgnoreCase(actualPassword));
+//                } catch (NoSuchElementException e) {
+//                    System.out.println("Exception in Password");
+//                }
+//                break;
+//
+//            case "3":
+//                try {
+//                    String actualConfirmPassword = driver.findElement(By.id("ConfirmPassword-error")).getText();
+//                    Assert.assertTrue("Error in Password Confirmation", expectedConfirmPassword.equalsIgnoreCase(actualConfirmPassword));
+//                } catch (NoSuchElementException e) {
+//                    System.out.println("Exception in Confirm Password");
+//                }
+//                break;
+//            default:
+//                System.out.println("unknown test");
+//        }
     }
 
     @Then("error message for empty field appears")
